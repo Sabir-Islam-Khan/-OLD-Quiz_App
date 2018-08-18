@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Quiz Quiz</string>
+    <string name="trueBtn">True</string>
+    <string name="falseBtn">False</string>
+    <string name="trueToast">You got It !</string>
+    <string name="falseToast">Oops ! Wrong Answer !</string>
+    <string name="initial_score">Score 0/13</string>
+    <string name="question_1">বাংলাদেশ এর রাজধানীর নাম বগুড়া </string>
+    <string name="question_2">সম্রাট আকবর বাংলা নববর্ষ চালু করেন </string>
+    <string name="question_3">বাংলাদেশ এর সর্ব দক্ষিণ এর থানা মনকষা </string>
+    <string name="question_4">কাজী নজরুল ইসলাম ১৯৭৯ সালে মৃত্যুবরন করেন</string>
+    <string name="question_5">মুক্তিযুদ্ধের সময় বাংলাদেশ এর প্রধানমন্ত্রীর দায়িত্বে ছিলেন তাজ উদ্দিন আহমেদ </string>
+    <string name="question_6">বরিশাল এর পূূ্র্ব নাম চন্দ্রদ্বীপ </string>
+    <string name="question_7">রবীন্দ্রনাথ ঠাকুর ২২শে শ্রাবণ জন্মগ্রহন করেন </string>
+    <string name="question_8">কাজী নজরুল ইসলাম ১৮৯৯ সালে জন্মগ্রহণ করেন </string>
+    <string name="question_9">বাংলাদেশ এ সিটি কর্পোরেশন ১১ টি</string>
+    <string name="question_10">রংপুর বিভাগ এ জেলার সংখ্যা ৮ টি</string>
+    <string name="question_11">সুন্দরবন খুলনা বিভাগ এ অবস্থিত </string>
+    <string name="question_12">সিলেট বাংলাদেশ এর ক্ষুদ্রতম বিভাগ</string>
+    <string name="question_13">বাংলাদেশ এর আয়তন ১৪৭৫৭০ বর্গ কি.মি.</string>
+
+</resources>
