@@ -45,6 +45,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        if(savedInstanceState != null){
+
+            score = savedInstanceState.getInt("scoreKey");
+            index = savedInstanceState.getInt("indexKey");
+
+
+        } else {
+            score = 0;
+            index = 0;
+        }
+
 
         // links all the textviews, buttons and progressBar to main java code
 
@@ -54,10 +65,15 @@ public class MainActivity extends AppCompatActivity {
         question = findViewById(R.id.questions);
         crntScore = findViewById(R.id.score);
 
+        // let's change this view here if the display changes
+        crntScore.setText("Score :" + score + "/" + questionBank.length);
+
         progress = findViewById(R.id.progressBar);
 
 
         DisplayQuestion = questionBank[index].getQuestionID();
+        // let's change this view here if the display changes
+
 
         trueBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -131,4 +147,15 @@ public class MainActivity extends AppCompatActivity {
             wrongSound.start();
         }
     }
+
+    // Let's solve the orientation problem
+    @Override
+
+    public  void onSaveInstanceState(Bundle outState){
+        super.onSaveInstanceState(outState);
+
+        outState.putInt("scoreKey", score);
+        outState.putInt("indexKey",index);
+    }
 }
+
