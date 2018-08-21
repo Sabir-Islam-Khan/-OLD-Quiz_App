@@ -1,6 +1,7 @@
 package com.asterisklab.quizquiz;
 
 import android.content.DialogInterface;
+import android.media.MediaPlayer;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -120,8 +121,14 @@ public class MainActivity extends AppCompatActivity {
         if(givenAnswer == correctAnswer){
             Toast.makeText(getApplicationContext(),R.string.trueToast, Toast.LENGTH_SHORT).show();
             score = score + 1;
+            // Let's add sound effect !!
+            MediaPlayer rightSound = MediaPlayer.create(getApplicationContext(), R.raw.correct_answer);
+            rightSound.start();
         } else {
             Toast.makeText(getApplicationContext(), R.string.falseToast, Toast.LENGTH_SHORT).show();
+            // Same thing here
+            MediaPlayer wrongSound = MediaPlayer.create(getApplicationContext(), R.raw.false_answer);
+            wrongSound.start();
         }
     }
 }
